@@ -1,0 +1,14 @@
+<p></p>
+
+<div class="col-md-6" >
+  <h2 class="text-center">Edit User</h2>
+  <form #editForm="ngForm" (ngSubmit)="update()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text"  name="name" [(ngModel)]="_postsArray.name">
+    </div>
+
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>

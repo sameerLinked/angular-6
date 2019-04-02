@@ -1,0 +1,6 @@
+<h3>user new component</h3>
+<form #heroUser="ngForm" (ngSubmit)="create(heroUser.value)">
+    <input type="text" name="name"  [(ngModel)]="newUser.name">
+    <input type="text" name="id" [(ngModel)]="newUser.id">
+    <input type="submit">
+</form>
